@@ -1,0 +1,19 @@
+{
+  "name": "backend-base",
+  "version": "1.0.0",
+  "description": "basics for a backend to use in an application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Massimo Ganzerli",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
