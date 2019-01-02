@@ -11,18 +11,18 @@ app.get("/api/array", (req, res) => {
   //just inventing an array
   const ResponseArray = [
     //filling the array with objects
-    { prop1: "value1", prop2: "value2", usefuleData: "super useful data " },
-    { prop1: "value1", prop2: "value2", usefuleData: "ser use data " },
+    { id: "1", prop2: "value2", usefuleData: "DATA 1" },
+    { id: "2", prop2: "value2", usefuleData: "DATA 2" },
     {
-      prop1: "value1",
+      id: "3",
       prop2: "value2",
-      usefuleData: "superd fdsugdssdfgeful data "
+      usefuleData: "DATA 3"
     },
-    { prop1: "value1", prop2: "value2", usefuleData: "sMEGA DATA  " },
+    { id: "4", prop2: "value2", usefuleData: "DATA 4" },
     {
-      prop1: "value1",
+      id: "5",
       prop2: "value2",
-      usefuleData: "super usefulDN($)§RMS)PM22 is my new password"
+      usefuleData: "DATA 5"
     }
   ];
   //parsing the array to output as response
