@@ -1,6 +1,8 @@
 // 1 route that returns an array
 // get express
 const express = require("express");
+// get a body parser for the post requests
+const bodyParser = require("body-parser");
 
 //initialize the server
 const app = express();
@@ -22,7 +24,8 @@ const responseArray = [
     usefulData: "DATA 5"
   }
 ];
-
+// let use the app the bodyparser to parse the json requests
+app.use(bodyParser.json());
 //adding a route where to listen
 app.get("/api/array", (req, res) => {
   //creating the response
@@ -34,7 +37,10 @@ app.get("/api/params/:id", (req, res) => {
   res.json(req.params);
 });
 
-app.post("api/array", (req, res) => {});
+app.post("/api/array", (req, res) => {
+  responseArray.push(req.body);
+  res.json(responseArray);
+});
 // environmant variable
 const environmentPort = process.env.PORT;
 // giving a port number port 3000 is the default or create react app.
