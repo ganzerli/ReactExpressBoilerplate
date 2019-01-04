@@ -1,4 +1,3 @@
-// 1 route that returns an array
 // get express
 const express = require("express");
 // get a body parser for the post requests
